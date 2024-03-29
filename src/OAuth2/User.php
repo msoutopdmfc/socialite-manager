@@ -2,7 +2,7 @@
 
 namespace Msoutopdmfc\Manager\OAuth2;
 
-use Laravel\Socialite\Two\User as BaseUser;
+use Msoutopdmfc\Socialite\Two\User as BaseUser;
 
 class User extends BaseUser
 {

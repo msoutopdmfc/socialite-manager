@@ -3,10 +3,10 @@
 namespace Msoutopdmfc\Manager;
 
 use Illuminate\Contracts\Container\Container as Application;
-use Laravel\Socialite\Contracts\Factory as SocialiteFactory;
-use Laravel\Socialite\One\AbstractProvider as SocialiteOAuth1AbstractProvider;
-use Laravel\Socialite\SocialiteManager;
-use Laravel\Socialite\Two\AbstractProvider as SocialiteOAuth2AbstractProvider;
+use Msoutopdmfc\Socialite\Contracts\Factory as SocialiteFactory;
+use Msoutopdmfc\Socialite\One\AbstractProvider as SocialiteOAuth1AbstractProvider;
+use Msoutopdmfc\Socialite\SocialiteManager;
+use Msoutopdmfc\Socialite\Two\AbstractProvider as SocialiteOAuth2AbstractProvider;
 use League\OAuth1\Client\Server\Server as OAuth1Server;
 use Msoutopdmfc\Manager\Contracts\Helpers\ConfigRetrieverInterface;
 use Msoutopdmfc\Manager\Exception\InvalidArgumentException;
@@ -47,8 +47,8 @@ class SocialiteWasCalled
     /**
      * @param string $providerName  'meetup'
      * @param string $providerClass 'Your\Name\Space\ClassNameProvider' must extend
-     *                              either Laravel\Socialite\Two\AbstractProvider or
-     *                              Laravel\Socialite\One\AbstractProvider
+     *                              either Msoutopdmfc\Socialite\Two\AbstractProvider or
+     *                              Msoutopdmfc\Socialite\One\AbstractProvider
      * @param string $oauth1Server  'Your\Name\Space\ClassNameServer' must extend League\OAuth1\Client\Server\Server
      *
      * @return void
@@ -80,12 +80,12 @@ class SocialiteWasCalled
     }
 
     /**
-     * @param \Laravel\Socialite\SocialiteManager $socialite
+     * @param \Msoutopdmfc\Socialite\SocialiteManager $socialite
      * @param string                              $providerName
      * @param string                              $providerClass
      * @param null|string                         $oauth1Server
      *
-     * @return \Laravel\Socialite\One\AbstractProvider|\Laravel\Socialite\Two\AbstractProvider
+     * @return \Msoutopdmfc\Socialite\One\AbstractProvider|\Msoutopdmfc\Socialite\Two\AbstractProvider
      *
      * @throws \Msoutopdmfc\Manager\Exception\MissingConfigException
      */
@@ -101,12 +101,12 @@ class SocialiteWasCalled
     /**
      * Build an OAuth 1 provider instance.
      *
-     * @param \Laravel\Socialite\SocialiteManager $socialite
-     * @param string $providerClass must extend Laravel\Socialite\One\AbstractProvider
+     * @param \Msoutopdmfc\Socialite\SocialiteManager $socialite
+     * @param string $providerClass must extend Msoutopdmfc\Socialite\One\AbstractProvider
      * @param string $providerName
      * @param string $oauth1Server  must extend League\OAuth1\Client\Server\Server
      *
-     * @return \Laravel\Socialite\One\AbstractProvider
+     * @return \Msoutopdmfc\Socialite\One\AbstractProvider
      *
      * @throws \Msoutopdmfc\Manager\Exception\MissingConfigException
      */
@@ -131,10 +131,10 @@ class SocialiteWasCalled
      * Build an OAuth 2 provider instance.
      *
      * @param SocialiteManager $socialite
-     * @param string           $providerClass must extend Laravel\Socialite\Two\AbstractProvider
+     * @param string           $providerClass must extend Msoutopdmfc\Socialite\Two\AbstractProvider
      * @param string           $providerName
      *
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \Msoutopdmfc\Socialite\Two\AbstractProvider
      *
      * @throws \Msoutopdmfc\Manager\Exception\MissingConfigException
      */

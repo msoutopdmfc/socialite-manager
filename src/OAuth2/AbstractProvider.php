@@ -3,8 +3,8 @@
 namespace Msoutopdmfc\Manager\OAuth2;
 
 use Illuminate\Support\Arr;
-use Laravel\Socialite\Two\AbstractProvider as BaseProvider;
-use Laravel\Socialite\Two\InvalidStateException;
+use Msoutopdmfc\Socialite\Two\AbstractProvider as BaseProvider;
+use Msoutopdmfc\Socialite\Two\InvalidStateException;
 use Msoutopdmfc\Manager\ConfigTrait;
 use Msoutopdmfc\Manager\Contracts\OAuth2\ProviderInterface;
 use Msoutopdmfc\Manager\SocialiteWasCalled;

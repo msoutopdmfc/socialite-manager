@@ -3,7 +3,7 @@
 namespace Msoutopdmfc\Manager\OAuth1;
 
 use Illuminate\Http\RedirectResponse;
-use Laravel\Socialite\One\AbstractProvider as BaseProvider;
+use Msoutopdmfc\Socialite\One\AbstractProvider as BaseProvider;
 use League\OAuth1\Client\Credentials\TokenCredentials;
 use Msoutopdmfc\Manager\ConfigTrait;
 use Msoutopdmfc\Manager\Contracts\ConfigInterface as Config;

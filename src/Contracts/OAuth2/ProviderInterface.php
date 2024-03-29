@@ -2,7 +2,7 @@
 
 namespace Msoutopdmfc\Manager\Contracts\OAuth2;
 
-use Laravel\Socialite\Two\ProviderInterface as SocialiteOauth2ProviderInterface;
+use Msoutopdmfc\Socialite\Two\ProviderInterface as SocialiteOauth2ProviderInterface;
 use Msoutopdmfc\Manager\Contracts\ConfigInterface as Config;
 
 interface ProviderInterface extends SocialiteOauth2ProviderInterface
